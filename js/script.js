@@ -22,7 +22,7 @@ $("#color option").val(function(idx, val) {
   });
 $(document).ready(function(){               // Функция вывода полного списка автомобилей
     $.each(cars, function(index, car){
-        $('.cars').append(`<div class="car"><div class="photo"><a data-fancybox="gallery" href="${car.photo}"><img src="${car.photo}" alt="${car.brand} ${car.model}"></a></div><div class="specification"><h1>${car.brand} ${car.model}</h1><span>Color: ${car.color}</span><h2>${car.price}</h2></div></div>`);
+        $('.cars').append(`<div class="car"><div class="photo"><a data-fancybox="gallery" href="${car.photo}"><img src="${car.photo}" alt="${car.brand} ${car.model}"></a></div><div class="specification"><h1>${car.brand} ${car.model}</h1><span>Color: <h2>${car.color}</h2></span><h2>${car.price}</h2></div></div>`);
     });
 });
 
@@ -158,7 +158,7 @@ $('button').click(function(){            // Выполнения по нажат
         }
     $.each(sortedCars, function(index, car)     //Выведение отсортированного массива на экран
     {
-        $('.cars').append(`<div class="car"><div class="photo"><a data-fancybox="gallery" href="${car.photo}"><img src="${car.photo}" alt="${car.brand} ${car.model}"></a></div><div class="specification"><h1>${car.brand} ${car.model}</h1><span>Color: ${car.color}</span><h2>${car.price}</h2></div></div>`);
+        $('.cars').append(`<div class="car"><div class="photo"><a data-fancybox="gallery" href="${car.photo}"><img src="${car.photo}" alt="${car.brand} ${car.model}"></a></div><div class="specification"><h1>${car.brand} ${car.model}</h1><span>Color: <h2>${car.color}</h2></span><h2>${car.price}</h2></div></div>`);
     });
       
     
